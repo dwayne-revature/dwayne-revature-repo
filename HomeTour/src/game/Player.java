@@ -1,0 +1,29 @@
+package game;
+
+import fixtures.Room;
+
+/*
+ * The player class represents the user's current
+ * position within a house.
+ */
+
+public class Player {
+	
+	private Room currentRoom;
+	
+	// Get & Set Functions
+	public Room getCurrentRoom() {
+		return currentRoom;
+	}
+	
+	public void setCurrentRoom(Room currentRoom) {
+		this.currentRoom = currentRoom;
+	}
+	
+	// Print to Screen
+	public void printStartingRoom() {
+		
+		currentRoom.OutputData();
+		
+	}
+}
